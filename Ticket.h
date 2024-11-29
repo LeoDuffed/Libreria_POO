@@ -21,6 +21,7 @@ class Ticket{
     int getDia();
     int getMes();
     int getAnio();
+    void calcularFechaDev();
     void mostrarTicket();
 
 };

@@ -45,3 +45,18 @@ int Ticket :: getAnio(){
     return anio;
 }
 
+void Ticket :: calcularFechaDev(){
+    dia += 7;
+    if (dia > 30){
+        dia  -= 30;
+        mes ++;
+        if (mes > 12){
+            mes = 1;
+            anio++;
+        }
+    } 
+}
+
+void Ticket :: mostrarTicket(){
+
+}

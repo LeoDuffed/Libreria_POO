@@ -73,7 +73,7 @@ void Libros :: tomarLibro(){
 
         cout << "\nSe imprimira su ticket\n";
 
-        Ticket ticket (nombreUsuario, dia, mes, anio);
+        Ticket ticket (nombreUsuario, getNombreLibro(), dia, mes, anio, librosPrestados);
         ticket.mostrarTicket();
 
 

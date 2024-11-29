@@ -79,8 +79,9 @@ void Ticket :: calcularFechaDev(){
 void Ticket::mostrarTicket() {
     cout << "\n-----------------------------------\n";
     cout << "Ticket de préstamo:\n";
-    cout << "Libros prestado: ";
     cout << "Nombre del usuario: " << nombre << endl;
+    cout << "Libros prestado: " << nombreLibro << endl;
+    cout << "Libros tomados: "<< cantidadTomada << endl;
     cout << "Fecha del préstamo: " << dia << "/" << mes << "/" << anio << endl;
     calcularFechaDev();
     cout << "Fecha de devolución: " << dia << "/" << mes << "/" << anio << endl;

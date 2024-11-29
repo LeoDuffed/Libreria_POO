@@ -1,5 +1,6 @@
 #include "Libros.h"
 #include <iostream>
+#include "Ticket.h"
 using namespace std;
 
 Libros :: Libros(){
@@ -49,34 +50,39 @@ void Libros :: mostrarDisponibilidad(){
 }
 void Libros :: tomarLibro(){
     if (cantidadDisponible > 0){
+
+        int librosPrestados;
+
+        cout << "\nSi hay disponibilidad del libro "<< getNombreLibro () << "!!!!" << endl;
         std :: string nombreUsuario;
         int dia, mes, anio;
+
+        cout << "\nCuantos libros deseas tomar?: ";
+        cin >> librosPrestados;
 
         cout << "\nIngrese su nombre completo:";
         cin.ignore();
         getline(cin, nombreUsuario);
 
-        cout << "Ingrese la fecha de hoy (dia/mes/año): ";
-        cin >> dia, mes, anio;
+        cout << "\nHas tomado prestado "<< librosPrestados<< " de " << getNombreLibro()<<"\n"<< endl;
 
-        cantidadDisponible--;
-
-    }
-
-    int librosPrestados;
-    if (getCantidadDisponible() != 0){
-        cout << "\nSi hay disponibilidad del libro "<< getNombreLibro () << "!!!!" << endl;
-        cout << "Cuantos libros deseas tomar?: ";
-        cin >> librosPrestados;
         cantidadDisponible = getCantidadDisponible() - librosPrestados;
-        cout << "Has tomado prestado "<< librosPrestados<< " de " << getNombreLibro()<<"\n"<< endl;
-        cout << "Tienes 7 dias para debolverlos, gracias\n";
+
+        cout << "\nIngrese la fecha de hoy (dia/mes/año): ";
+        cin >> dia >> mes >> anio;        
+
+        cout << "\nSe imprimira su ticket\n";
+
+        Ticket ticket (nombreUsuario, dia, mes, anio);
+        ticket.mostrarTicket();
+
 
     } else {
-        cout << "\nLo sentimos, ya no hay libros disponibles de "<< getNombreLibro() << "\n"<< endl;
+        cout << "Lo sentimos, no hay mas libros de "<< getNombreLibro()<< " disponibles "<< endl;
     }
 
 }
+
 
 void Libros :: devolberLibro(){
     int libriosDuevueltos;

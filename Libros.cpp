@@ -48,6 +48,21 @@ void Libros :: mostrarDisponibilidad(){
 
 }
 void Libros :: tomarLibro(){
+    if (cantidadDisponible > 0){
+        std :: string nombreUsuario;
+        int dia, mes, anio;
+
+        cout << "\nIngrese su nombre completo:";
+        cin.ignore();
+        getline(cin, nombreUsuario);
+
+        cout << "Ingrese la fecha de hoy (dia/mes/año): ";
+        cin >> dia, mes, anio;
+
+        cantidadDisponible--;
+
+    }
+
     int librosPrestados;
     if (getCantidadDisponible() != 0){
         cout << "\nSi hay disponibilidad del libro "<< getNombreLibro () << "!!!!" << endl;

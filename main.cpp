@@ -43,14 +43,20 @@ int main(){
                 librosArray[opciones-1].mostrarDisponibilidad();
             } else if (accionesLibros == 2){
                 librosArray[opciones-1].tomarLibro();
+            } else if (accionesLibros == 3){
+                librosArray[accionesLibros = 1].devolberLibro();
+            } else if (accionesLibros == 0){
+                cout << "\nSaliendo al menu \n";
+            } else {
+                cout << "\nOpcion invalida\n";
             }
+        } else if(opciones == 0){
+            cout << "\nSaliendo...\n";
+        } else {
+            cout << "\nOpcion invalida\n";
         }
-
-
-
-
        
-        }while (opciones != 0);
+    }while (opciones != 0);
 
     return 0;
 

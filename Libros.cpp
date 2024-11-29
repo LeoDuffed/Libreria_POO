@@ -62,3 +62,13 @@ void Libros :: tomarLibro(){
     }
 
 }
+
+void Libros :: devolberLibro(){
+    int libriosDuevueltos;
+    cout << "Has ingresado a devolver "<< getNombreLibro() << endl;
+    cout << "cuantos libros deseas regresar?: ";
+    cin >> libriosDuevueltos;
+    cantidadDisponible = getCantidadDisponible() + libriosDuevueltos;
+    cout << "Has regresado "<< libriosDuevueltos<<endl;
+
+}

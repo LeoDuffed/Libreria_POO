@@ -21,6 +21,7 @@ class Libros{
     void mostrarLibros(Libros librosArray[], int size);
     void mostrarDisponibilidad();
     void tomarLibro();
+    void devolberLibro();
 
 };
 

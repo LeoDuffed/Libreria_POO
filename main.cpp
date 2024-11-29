@@ -44,7 +44,7 @@ int main(){
             } else if (accionesLibros == 2){
                 librosArray[opciones-1].tomarLibro();
             } else if (accionesLibros == 3){
-                librosArray[accionesLibros = 1].devolberLibro();
+                librosArray[accionesLibros - 1].devolberLibro();
             } else if (accionesLibros == 0){
                 cout << "\nSaliendo al menu \n";
             } else {

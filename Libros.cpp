@@ -57,14 +57,14 @@ void Libros :: tomarLibro(){
         std :: string nombreUsuario;
         int dia, mes, anio;
 
-        cout << "\nCuantos libros deseas tomar?: ";
-        cin >> librosPrestados;
-
         cout << "\nIngrese su nombre completo:";
         cin.ignore();
         getline(cin, nombreUsuario);
 
-        cout << "\nHas tomado prestado "<< librosPrestados<< " de " << getNombreLibro()<<"\n"<< endl;
+        cout << "\nCuantos libros deseas tomar?: ";
+        cin >> librosPrestados;
+
+        cout << "\nHas tomado prestado "<< librosPrestados<< " libro/s de " << getNombreLibro()<<"\n"<< endl;
 
         cantidadDisponible = getCantidadDisponible() - librosPrestados;
 

@@ -29,7 +29,7 @@ int main(){
         cout << "\n------------------------------------------------\n";
         cout << "\nTodos los libros\n";
         biblioteca.mostrarLibros(librosArray,15);
-        cout << "Ingresa 0 para salir: ";
+        cout << "\n---Ingresa 0 para salir---\n";
         cout << "\nIngresa el numero del libro que quieras: \n";
         cin >> opciones;
         if (opciones >= 1 && opciones <= 15){

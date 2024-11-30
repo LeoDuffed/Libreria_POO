@@ -36,7 +36,7 @@ int Libros :: getCantidadDisponible(){
 }
 void Libros :: mostrarLibros(Libros librosArray[], int size){
     for (int i = 0; i < size; i++){
-        cout << i+1 << ".  Libro: "<< librosArray[i].getNombreLibro()<<" ,Autor: "<<librosArray[i].getNombreAutor()<< endl;
+        cout <<"\n"<< i+1 << ".  Libro: "<< librosArray[i].getNombreLibro()<<" ,Autor: "<<librosArray[i].getNombreAutor()<< endl;
 
     }
 }

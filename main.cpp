@@ -52,11 +52,11 @@ Libros librosArray[40] = {
     do {
 
         Libros biblioteca;
-        cout << "\n------------------------------------------------\n";
-        cout << "\n         ~~~Todos los libros~~~\n";
+        cout << "\n*--------------------------------------------------------------*\n";
+        cout << "\n                ~~~Todos los libros~~~\n";
         biblioteca.mostrarLibros(librosArray,40);
-        cout << "\n---Ingresa 0 para salir---\n";
-        cout << "\nIngresa el numero del libro que quieras: \n";
+        cout << "\n                ---Ingresa 0 para salir---\n";
+        cout << "\nIngresa el numero del libro que quieras: ";
         cin >> opciones;
         if (opciones >= 1 && opciones <= 15){
             int accionesLibros;

@@ -57,7 +57,7 @@ void Libros :: tomarLibro(){
         std :: string nombreUsuario;
         int dia, mes, anio;
 
-        cout << "\nIngrese su nombre completo:";
+        cout << "\nIngrese su nombre completo: ";
         cin.ignore();
         getline(cin, nombreUsuario);
 

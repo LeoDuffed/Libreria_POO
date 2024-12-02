@@ -64,7 +64,7 @@ Libros librosArray[40] = {
         cout << "\n                    ~~~Todos los libros~~~\n";
         biblioteca.mostrarLibros(librosArray,40);
         cout << "\n                   <---Ingresa 0 para salir--->\n";
-        cout << "\nIngresa el numero del libro que quieras: ";
+        cout << "\n ---> Ingresa el numero del libro: ";
         cin >> opciones;
         if (opciones >= 1 && opciones <= 15){
             int accionesLibros;

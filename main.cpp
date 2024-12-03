@@ -52,8 +52,7 @@ Libros librosArray[40] = {
     do {
 
         Libros biblioteca;
-        cout << "\n";
-        cout << "             *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\n";
+        cout << "\n            *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*\n";
         cout << "             |                                        |\n";
         cout << "             |        Bien venido a la Libreria       |\n";
         cout << "             |                DUFFERIA                |\n";
